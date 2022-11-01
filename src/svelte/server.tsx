@@ -13,7 +13,7 @@ export async function renderFromServer(
   const newProps = getSvelteProps(props);
 
   let { html, css } = Cmp.render(
-    { newProps, class: "hello" },
+    { newProps },
     {
       $$slots: {
         default: () => "<!--SLOT-->",
@@ -89,6 +89,7 @@ export async function renderFromServer(
   return (
     <>
       <Host ref={ref}>
+        <SSRRaw data={styles}></SSRRaw>
         <SSRRaw data={html}></SSRRaw>
       </Host>
       <q-slot ref={slotRef}>

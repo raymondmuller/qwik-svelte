@@ -10,7 +10,7 @@ import {
 
 export type Slots = { [key: string]: any };
 
-function createSlotFn(ele: any, props = {}) {
+function createSlotFn([ele, props = {}]) {
   if (is_function(ele) && ele.prototype instanceof SvelteComponent) {
     let component: any;
 

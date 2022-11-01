@@ -1,7 +1,7 @@
 {
   "name": "qwik-svelte",
-  "version": "0.0.4",
-  "description": "Qwik Svelte allows you to use Svelte components into an existing Qwik application",
+  "version": "0.0.5",
+  "description": "Qwik Svelte allows you to use Svelte components in an existing Qwik application",
   "scripts": {
     "build": "vite build --mode lib",
     "dev": "vite",

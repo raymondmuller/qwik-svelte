@@ -2,7 +2,7 @@
 
 ---
 
-Qwik Svelte allows you to use Svelte components into an existing Qwik application.
+Qwik Svelte allows you to use Svelte components in an existing Qwik application.
 
 ---
 

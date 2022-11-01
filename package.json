@@ -1,0 +1,55 @@
+{
+  "name": "qwik-svelte",
+  "version": "0.0.1",
+  "description": "Qwik Svelte allows you to use Svelte components into an existing Qwik application",
+  "scripts": {
+    "build": "vite build --mode lib",
+    "dev": "vite",
+    "fmt": "prettier --write .",
+    "fmt.check": "prettier --check .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@builder.io/qwik": ">=0.1.11",
+    "@tsconfig/svelte": "^3.0.0",
+    "@types/react": "^18.0.24",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "svelte": "^3.52.0",
+    "typescript": "4.8.4",
+    "vite": "3.2.1"
+  },
+  "peerDependencies": {
+    "@builder.io/qwik": ">=0.1.11",
+    "@types/react": ">=18.0.1",
+    "react": "^18.2.0",
+    "svelte": "^3.52.0"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.qwik.mjs",
+      "require": "./lib/index.qwik.cjs",
+      "types": "./lib/types/index.d.ts"
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raymondmuller/qwik-svelte.git",
+    "directory": "src"
+  },
+  "bugs": {
+    "url": "https://github.com/raymondmuller/qwik-svelte/issues"
+  },
+  "type": "module",
+  "main": "./lib/index.qwik.mjs",
+  "module": "./lib/index.qwik.mjs",
+  "qwik": "./lib/index.qwik.mjs",
+  "types": "./lib/types/index.d.ts"
+}

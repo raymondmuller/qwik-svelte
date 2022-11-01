@@ -6,6 +6,9 @@ Qwik Svelte allows you to use Svelte components into an existing Qwik applicatio
 
 ---
 
+## Example
+https://github.com/raymondmuller/qwik-svelte-example
+
 ## Get Started
 
 run npm install qwik-svelte inside your Qwik project<
